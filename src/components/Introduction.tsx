@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Fab, makeStyles, Paper, Typography } from '@material-ui/core';
-import Image from 'material-ui-image';
 import { Twitter } from '@material-ui/icons';
+import profileIcon from '../images/profile-icon.jpeg';
 
 export const Introduction = ()=>{
   const classes = useStyles();
@@ -16,7 +16,7 @@ export const Introduction = ()=>{
           </Typography>
         
           <img 
-            src={`/profile-icon.jpeg`}
+            src={profileIcon}
             style={{width:"200px", height:"200px", marginRight:"auto", marginLeft:"auto", paddingTop:"20px"}}
           />
           <div style={{marginLeft:"auto", marginRight:"auto", width:"60%", paddingTop:"20px"}}>

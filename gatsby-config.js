@@ -7,7 +7,7 @@
 const path = require('path')
 
 module.exports = { // eslint-disable-line
-  pathPrefix: "/tech-blog",
+  // pathPrefix: "/tech-blog",
   /* Your site config here */
   siteMetadata: {
     title: 'Nakazatoのブログ',
