@@ -31,7 +31,7 @@ export const Introduction = ()=>{
             </Typography>
             <Typography variant="body1">
             バックエンドも好きですが、フロントエンドの
-            どうやってもごちゃごちゃしてしまうところを綺麗にしようという雰囲気がとても好きです。
+            ごちゃごちゃしてしまわないように綺麗にしようと頑張る感じがとても好きです。
             (このブログのコードは死ぬほど汚い)
             </Typography>
             <Typography variant="body1">
@@ -40,7 +40,7 @@ export const Introduction = ()=>{
 
           </div>
           <div style={{paddingTop:"20px"}}>
-            <Typography variant="h6">良ければTwitterもフォーローしてください。</Typography>
+            <Typography variant="h6">よければTwitterもフォローしてください。</Typography>
           </div>
           <div style={{marginRight:"auto", marginLeft:"auto", paddingTop:"20px", paddingBottom:"20px"}}>
             <a href="https://twitter.com/tottemoganbaru">

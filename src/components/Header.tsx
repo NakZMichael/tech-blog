@@ -41,9 +41,9 @@ export const Header = () => {
         <Toolbar className={classes.toolbar}>
 
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <Button >
+            <Button style={{textTransform:"none"}}>
               <Typography color="secondary" variant="h4" component="h1" >
-                nakazato<span style={{fontWeight:"bold"}}>overflow</span>
+                <span style={{color:"#ccc"}}>nakazato</span><span style={{fontWeight:"bold", color:"#fff"}}>overflow</span>
               </Typography>
             </Button>
           </Link>
