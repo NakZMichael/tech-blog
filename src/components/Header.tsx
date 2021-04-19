@@ -4,18 +4,25 @@ import HomeIcon from '@material-ui/icons/Home';
 import { Link } from 'gatsby';
 
 const useStyles = makeStyles(theme => ({
-  offset: theme.mixins.toolbar,
-  headerNavigation:{
-    flex:"1",
-    display:"flex",
-    justifyContent:"flex-end",
+  root:{
+    width:"100%",
   },
+  // Appbarをfixにしつつコンテンツと被らないための設定
+  offset: theme.mixins.toolbar,
   toolbar:{
     display:"flex",
     margin:0,
     padding:0,
   },
-  button:{
+  // 今はHomeのIcon一つしかないけども将来的に増やすつもりなので
+  // display:flexを指定している
+  // flex:1,justifyContent:flex-endとすることでIconを右端に寄せている
+  headerNavigation:{
+    flex:"1",
+    display:"flex",
+    justifyContent:"flex-end",
+  },
+  iconButton:{
     // margin: theme.spacing(1),
     marginRight:theme.spacing(2)
   },
@@ -30,19 +37,20 @@ export const Header = () => {
   const classes = useStyles();
   return (
     <>
-      <AppBar>
+      <AppBar className={classes.root}>
         <Toolbar className={classes.toolbar}>
 
-          <div>
-            <Link to="/" style={{ textDecoration: 'none' }}>
-              <Button >
-                <Typography color="secondary" variant="h4" component="h1" >nakazato<span style={{fontWeight:"bold"}}>overflow</span></Typography>
-              </Button>
-            </Link>
-          </div>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button >
+              <Typography color="secondary" variant="h4" component="h1" >
+                nakazato<span style={{fontWeight:"bold"}}>overflow</span>
+              </Typography>
+            </Button>
+          </Link>
+
           <div className={classes.headerNavigation}>
             <Link to="/">
-              <IconButton component="span" className={classes.button} >
+              <IconButton component="span" className={classes.iconButton} >
                 <HomeIcon color="secondary" fontSize="large" />
               </IconButton>
             </Link>

@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme=>({
     color:"#fff",
     width:"100%",
     margin:0,
-    marginTop:"100%",
+    padding:0,
     paddingTop:20,
     paddingBottom:20,
     position:"absolute",

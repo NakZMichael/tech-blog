@@ -74,6 +74,7 @@ const useStyles = makeStyles({
     minHeight:"calc( 100vh - 200px )",
     position:"relative",
     paddingBottom:"200px",
+    width:"100%",
   }
 });
 
