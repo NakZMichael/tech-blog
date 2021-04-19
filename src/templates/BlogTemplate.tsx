@@ -4,7 +4,6 @@ import { BaseLayout } from '../components/BaseLayout';
 import SEO from '../components/seo';
 import {Header1, CodeHightLight, Header2, Header3, Paragraph} from '../components/BlogElements';
 import { Container, makeStyles } from '@material-ui/core';
-import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const useStyles = makeStyles(theme=>({
   root:{

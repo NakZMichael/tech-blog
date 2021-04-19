@@ -1,4 +1,4 @@
-import { AppBar, BottomNavigation, Fab, IconButton, makeStyles, Toolbar, Typography } from '@material-ui/core';
+import {  Fab,  makeStyles, Toolbar, Typography } from '@material-ui/core';
 import { Twitter } from '@material-ui/icons';
 import React from 'react';
 
